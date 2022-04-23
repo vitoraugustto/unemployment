@@ -1,0 +1,63 @@
+import React from "react";
+import styled from "styled-components";
+
+import {
+  COLOR_BLACK_700,
+  COLOR_VIOLET_400,
+  COLOR_WHITE,
+  TITILLIUM,
+} from "../../themes/theme";
+import Row from "../Layout/Row";
+
+const Button = ({
+  height,
+  color,
+  bgColor,
+  rounded,
+  borderColor,
+  onClick,
+  disabled,
+  fontSize,
+  hoverColor,
+  children,
+}) => {
+  return (
+    <StyledButton
+      hoverColor={hoverColor}
+      height={height}
+      fontSize={fontSize}
+      disabled={disabled}
+      color={color}
+      bgColor={bgColor}
+      rounded={rounded}
+      borderColor={borderColor}
+      onClick={onClick}
+    >
+      <Row hCenter vCenter>
+        {children}
+      </Row>
+    </StyledButton>
+  );
+};
+
+const StyledButton = styled.button`
+  height: ${(props) => (props.height ? props.height : "auto")};
+  border: ${(props) =>
+    props.borderColor ? `3px solid ${props.borderColor}` : "none"};
+  border-radius: ${(props) =>
+    props.borderRadius ? props.borderRadius : "8px"};
+  padding: 10px;
+  background-color: ${(props) =>
+    props.bgColor ? props.bgColor : "transparent"};
+  color: ${(props) => (props.color ? props.color : COLOR_WHITE)};
+  letter-spacing: 1.5px;
+  border-radius: ${(props) => (props.rounded ? "8px" : "0")};
+  font-family: Poppins;
+  font-size: ${(props) => (props.fontSize ? props.fontSize : "22px")};
+  transition: 0.5s;
+  &:hover {
+    border: 3px solid ${(props) => (props.hoverColor ? props.hoverColor : "")};
+  }
+`;
+
+export default Button;
