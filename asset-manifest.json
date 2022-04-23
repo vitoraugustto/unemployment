@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/unemployment/static/js/main.de33ce82.js",
+    "static/media/tech-background.jpg": "/unemployment/static/media/tech-background.bae7f10e0b8382ad2558.jpg",
+    "static/media/unemployment-background.jpg": "/unemployment/static/media/unemployment-background.aef11e0bc27125ca6c4d.jpg",
+    "static/media/older-background.jpg": "/unemployment/static/media/older-background.e39bf8f9df9a16a69a23.jpg",
+    "static/media/ubi-background.jpg": "/unemployment/static/media/ubi-background.817e4017131c2fb44563.jpg",
+    "static/media/covid-background.jpg": "/unemployment/static/media/covid-background.de967aff4a6c1c190310.jpg",
+    "index.html": "/unemployment/index.html",
+    "static/media/chevron.svg": "/unemployment/static/media/chevron.91f9068f4348686bf7f0c9ec973614bf.svg",
+    "main.de33ce82.js.map": "/unemployment/static/js/main.de33ce82.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.de33ce82.js"
+  ]
+}
